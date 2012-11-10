@@ -7,7 +7,7 @@ module JCIFS
   class RemoteFile
     def initialize(path, user, password)
       auth = NtlmPasswordAuthentication.new(nil, user, password)
-      @smb_file = SmbFile.new("smb:/#{path}", auth)
+      @smb_file = SmbFile.new("smb:/#{path.gsub('\\','/')}", auth)
     end
 
     def read
