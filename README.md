@@ -6,7 +6,7 @@ Just a simple project for messin' with jcifs, a cifs implementation in java.
 Overview
 --------
 
-This is a simple sinatra app for demonstrating the jcifs library. Most of the meat is in jcifs.rb. Specify the path you intend to read along with the username and password in user.yml in the config directory. 
+This is a simple sinatra app for demonstrating the jcifs library. Most of the meat is in remote_file.rb. Specify the path you intend to read along with the username and password in user.yml in the config directory. 
 
 Installation
 ------------
