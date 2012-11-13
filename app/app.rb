@@ -10,8 +10,7 @@ module JCIFS
   	end
 
   	get '/file' do
-  	  content_type 'text/rtf'
-  	  RemoteFile.new(%q<settings.file_path>, settings.username, settings.password).read
+  	  RemoteFile.new(settings.file_path, settings.username, settings.password).read
   	end
   end
 end
